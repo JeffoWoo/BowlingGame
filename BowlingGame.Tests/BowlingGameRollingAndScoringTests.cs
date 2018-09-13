@@ -77,7 +77,7 @@ namespace BowlingGame.Tests
         }
 
         [Test]
-        public void Test_game_player_trys_to_roll_to_many_balls()
+        public void Test_game_player_trys_to_roll_too_many_balls()
         {
             var ex = Assert.Throws<IndexOutOfRangeException>(() => RollByMultipleAndPinsDown(22, 1));
             Assert.That(ex.Message, Is.EqualTo("Index was outside the bounds of the array."));
